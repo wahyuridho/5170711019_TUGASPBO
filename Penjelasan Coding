@@ -1,0 +1,15 @@
+Pada Class RAS atau ParentClass terdapat 3 buah method yang memiliki hak akses Protected. yang hanya bisa diakses oleh method internal class dan subclass dari class RAS
+dimana method tersebut adalah "protected void Berjalan()", "protected String Makan(String Masak)", "protected void Goda()"
+lalu pada class manusia yang berfungsi sebagai subClass dari Class RAS. terdapat 2 buah method yaitu
+method "public void Berjalan()" yang merupakan 'OVERIDING' dari method pada Classparentnya dan juga method
+"public void Insaf()" yang merupakan method dari class tersebut sendiri. lalu pada Class Iblis terdapat juga
+2 buah method yaitu "public void Makan()" dan "public void Goda()" dimana pada method 'Goda' adalah merupakan
+overiding dari method 'Goda' yang ada pada ParentClassnya. Bedanya pada method ini menggunakan keyword "super"
+untuk melakukan overiding sedang untuk method pada class manusia menggunakan metode object.
+lebih jelasnya pada MainClass dibuat object dari Class RAS "RAS ber = new RAS();", lalu pembuatan
+object pada Class Manusia "Manusia HA = new Manusia();". lalu pembuatan object untuk pemanggilan overiding
+dengan membuat object dari Class RAS pada Class Manusia "RAS jan = new Manusia();". setelah itu dibuatlah object
+dari Class Iblis. untuk pemanggilannya antara lain : "ber.Berjalan();" memanggil method 'Berjalan' dari Class RAS
+"HA.Berjalan();" memanggil method 'Berjalan' dari Class Manusia, "jan.Berjalan();" memanggil method overiding dari
+Class Manusia. lalu "ber.Goda();" memanggil Overiding dari Class RAS yang berada di Class Iblis. "mus.Goda();"
+lalu yang terakhir adalah memanggil method 'Goda()' dari Class Iblis
